@@ -1,6 +1,6 @@
 # This file is used in bitbucket pipelines
 FROM composer:2.8.8 AS composer
-FROM php:8.1-fpm
+FROM php:8.3.36-fpm-bookworm
 
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
